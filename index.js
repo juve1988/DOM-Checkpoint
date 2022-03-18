@@ -27,6 +27,8 @@ function deleteRow(e) {
 var cible = e.target
 var tr = cible.parentElement.parentElement.parentElement.parentElement
 var price = tr.querySelector('.price')
+price.innerHTML = 0
+sum()
 tr.remove()  
 }
 
